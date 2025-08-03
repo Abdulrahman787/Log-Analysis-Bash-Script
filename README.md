@@ -47,15 +47,15 @@ analysing log files
 ======================
 
 list of log files updated in last 24 hours
-/media/sf_shared/logs/application.log
-/media/sf_shared/logs/system.log
+/logs/application.log
+/logs/system.log
 
 ==============================================
-========Analysing /media/sf_shared/logs/application.log==========
-Searching for error patterns in /media/sf_shared/logs/application.log
+========Analysing /logs/application.log==========
+Searching for error patterns in /logs/application.log
 ===============================================
 
-Searching ERROR logs in /media/sf_shared/logs/application.log file
+Searching ERROR logs in /logs/application.log file
 [2025-06-01 08:17:48] [ERROR] Payment gateway timeout after 30s for transaction TX78901234
 [2025-06-01 08:25:48] [ERROR] Insufficient disk space for file upload
 [2025-06-01 08:41:33] [ERROR] Invalid product code: PRD-404-NOTFOUND
@@ -66,26 +66,26 @@ Searching ERROR logs in /media/sf_shared/logs/application.log file
 Number of ERROR logs found in /media/sf_shared/logs/application.log
 6
 
-Searching FATAL logs in /media/sf_shared/logs/application.log file
+Searching FATAL logs in /logs/application.log file
 [2025-06-01 08:47:22] [FATAL] Out of memory error in recommendation engine
 [2025-06-01 09:25:33] [FATAL] Kernel panic on worker node worker-03
 
 Number of FATAL logs found in /media/sf_shared/logs/application.log
 2
 
-Searching CRITICAL logs in /media/sf_shared/logs/application.log file
+Searching CRITICAL logs in /logs/application.log file
 [2025-06-01 08:32:13] [CRITICAL] Database connection lost during backup
 [2025-06-01 09:17:22] [CRITICAL] Security alert: Multiple failed login attempts for admin account
 
-Number of CRITICAL logs found in /media/sf_shared/logs/application.log
+Number of CRITICAL logs found in /logs/application.log
 2
 
 ==============================================
-========Analysing /media/sf_shared/logs/system.log==========
-Searching for error patterns in /media/sf_shared/logs/system.log
+========Analysing /logs/system.log==========
+Searching for error patterns in /logs/system.log
 ===============================================
 
-Searching ERROR logs in /media/sf_shared/logs/system.log file
+Searching ERROR logs in /logs/system.log file
 Jun  1 01:20:18 server-prod-01 sshd[23954]: [ERROR] Failed password for root from 198.51.100.23 port 63122 ssh2
 Jun  1 01:20:19 server-prod-01 sshd[23954]: [ERROR] Failed password for root from 198.51.100.23 port 63122 ssh2
 Jun  1 01:20:20 server-prod-01 sshd[23954]: [ERROR] Failed password for root from 198.51.100.23 port 63122 ssh2
@@ -99,10 +99,10 @@ Jun  1 04:40:12 server-prod-01 kernel: [59412.345678] [ERROR] Memory failure: 0x
 Jun  1 04:40:13 server-prod-01 kernel: [59413.456789] [ERROR] EDAC MC0: 1 CE memory read error on CPU_SrcID#0_MC#0_Chan#0_DIMM#0
 Jun  1 04:40:16 server-prod-01 kernel: [59416.789012] [ERROR] EDAC MC0: 1 CE memory read error on CPU_SrcID#0_MC#0_Chan#0_DIMM#0
 
-Number of ERROR logs found in /media/sf_shared/logs/system.log
+Number of ERROR logs found in /logs/system.log
 12
 
-Searching FATAL logs in /media/sf_shared/logs/system.log file
+Searching FATAL logs in /logs/system.log file
 Jun  1 01:45:01 server-prod-01 kernel: [49411.123456] [FATAL] EXT4-fs error (device sda1): ext4_journal_check_start:56: Detected aborted journal
 Jun  1 01:45:02 server-prod-01 kernel: [49412.234567] [FATAL] EXT4-fs (sda1): Remounting filesystem read-only
 Jun  1 01:45:06 server-prod-01 smartd[1234]: [CRITICAL] Device: /dev/sda [SAT], failed SMART usage Attribute: Reallocated_Sector_Ct.
@@ -110,18 +110,18 @@ Jun  1 04:40:14 server-prod-01 kernel: [59414.567890] [CRITICAL] Hardware event.
 Jun  1 04:40:15 server-prod-01 kernel: [59415.678901] [CRITICAL] MCE: [Hardware Error]: CPU 0: Machine Check: 0 Bank 6: ee00000000800400
 Jun  1 03:46:01 server-prod-01 smartd[1234]: [CRITICAL] Device: /dev/sdc [SAT], failed SMART usage Attribute: Raw_Read_Error_Rate.
 
-Number of FATAL logs found in /media/sf_shared/logs/system.log
+Number of FATAL logs found in /logs/system.log
 2
 
-Searching CRITICAL logs in /media/sf_shared/logs/system.log file
+Searching CRITICAL logs in /logs/system.log file
 Jun  1 01:20:21 server-prod-01 sshd[23954]: [CRITICAL] Disconnecting: Too many authentication failures for root from 198.51.100.23 port 63122 ssh2
 Jun  1 03:46:01 server-prod-01 smartd[1234]: [CRITICAL] Device: /dev/sdc [SAT], failed SMART usage Attribute: Raw_Read_Error_Rate.
 Jun  1 04:40:14 server-prod-01 kernel: [59414.567890] [CRITICAL] Hardware event. This is not a software error.
 Jun  1 04:40:15 server-prod-01 kernel: [59415.678901] [CRITICAL] MCE: [Hardware Error]: CPU 0: Machine Check: 0 Bank 6: ee00000000800400
 
-Number of CRITICAL logs found in /media/sf_shared/logs/system.log
+Number of CRITICAL logs found in /logs/system.log
 4
 
-Log analysis completed and report saved in: /media/sf_shared/logs/log_analysis_report
+Log analysis completed and report saved in: /logs/log_analysis_report
 
 ```
